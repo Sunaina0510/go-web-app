@@ -60,7 +60,7 @@ jobs:
           context: .
           files: ./Dockerfile
           push: true
-          tags: ${{secrets.DOCKERHUB_USERNAME}}/go-web-app:${{ github.run_id }}
+          tags: ${{secrets.DOCKER_USERNAME}}/go-web-app:${{ github.run_id }}
         # run: |
         #   docker build -t sunaina0510/go-web-app:${{ github.sha }} .
         #   docker push sunaina0510/go-web-app:${{ github.sha }}
